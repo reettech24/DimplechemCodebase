@@ -1,0 +1,295 @@
+/* main content holder */
+.main-content-holder {
+    display: grid;
+    row-gap: 20px;
+  }
+
+  /* Custom scrollbar hide */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  
+  .content-grid-one {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 16px;
+  }
+  .content-grid-two {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 16px;
+  }
+  
+  .subgrid-two {
+    display: grid;
+    row-gap: 20px;
+    height: 100%;
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .content-grid-one,
+    .content-grid-two {
+      column-gap: 6px;
+    }
+    .main-content-holder,
+    .subgrid-two {
+      row-gap: 12px;
+    }
+  }
+  
+  @media screen and (max-width: 992px) {
+    .content-grid-one {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 12px;
+    }
+    .content-grid-two {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .content-grid-two .grid-two-item:nth-child(3) {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+    .content-grid-two .grid-two-item:nth-child(3) .subgrid-two {
+      grid-template-columns: repeat(2, 1fr);
+      height: 220px;
+      column-gap: 6px;
+    }
+    .content-grid-two {
+      row-gap: 12px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .content-grid-one {
+      grid-template-columns: repeat(1, 1fr);
+      column-gap: 0;
+    }
+    .content-grid-two {
+      grid-template-columns: repeat(1, 1fr);
+      column-gap: 0;
+    }
+    .content-grid-two .grid-two-item:nth-child(1) {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+    .content-grid-two .grid-two-item:nth-child(3) .subgrid-two {
+      grid-template-columns: repeat(1, 1fr);
+      height: auto;
+    }
+    .content-grid-two .grid-two-item:nth-child(3) .subgrid-two .subgrid-two-item {
+      height: 220px;
+    }
+  }
+
+  /* Setting Left Sidebar Data */
+
+  .navigationData {
+    height: 490px;
+    overflow-y: scroll;
+  
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+  
+    &::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+      border-radius: 18px;
+    }
+  
+    &::-webkit-scrollbar-thumb {
+      background-color: var(--clr-pumpkin);
+      border-radius: 18px;
+    }
+  }
+  
+  .nav-item {
+    margin-bottom: 10px;
+    margin-right: 4px;
+  }
+  /* .nav-link {
+    display: block;
+    height: 35px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex;
+    padding: 6px 10px;
+    column-gap: 6px;
+    letter-spacing: 0.01em;
+    border: 1px solid transparent;
+    transition: var(--transition-default);
+  } */
+  /* .nav-link:hover {
+    border: 1px solid var(--clr-primar-light);
+  }
+  .nav-link.active {
+    background-color: var(--clr-pumpkin);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+      rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  } */
+  .nav-link-icons {
+    width: 20px;
+    height: 18px;
+  }
+  .nav-link-text {
+    text-transform: capitalize;
+  }
+
+ 
+/* Responsive Styles */
+@media screen and (max-width: 1400px) {
+  .sidebar {
+    padding: 24px 16px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .sidebar {
+    position: absolute;
+    z-index: 999;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    margin-left: -300px;
+  }
+  .sidebar-change {
+    margin-left: 0;
+  }
+  .logo-container {
+    margin-top: 40px;
+  }
+  .info-name {
+    display: none;
+  }
+  .nav-link {
+    display: flex;
+    justify-content: flex-start; /* Aligns the content to the left */
+    align-items: center; /* Centers the content vertically */
+    margin-bottom: 5px;
+    padding-left: 20px !important;
+  }
+  .nav-item {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 18px;
+    flex-direction: column;
+  }
+  .nav-link,
+  .submenu-link,
+  .nested-submenu-link {
+    padding: 0;
+    display: flex;
+    justify-content: flex-start; /* Aligns the content to the left */
+    align-items: center;
+    padding-left: 20px !important;
+    width: 100%;
+    height: 100%;
+  }
+  .nav-link.active,
+  .nav-link:hover,
+  .submenu-link.active,
+  .submenu-link:hover,
+  .nested-submenu-link.active,
+  .nested-submenu-link:hover {
+    border-radius: 5px;
+    padding: 10px 0px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    position: absolute;
+    z-index: 999;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    margin-left: -300px;
+  }
+  .sidebar-change {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .sidebar {
+    position: absolute;
+    z-index: 999;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    margin-left: -300px;
+  }
+  .sidebar-change {
+    margin-left: 0;
+  }
+}
+
+
+/* Edit Profile */
+.dataName .css-1f44al2-control {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer !important;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  min-height: 48px;
+  outline: 0 !important;
+  position: relative;
+  -webkit-transition: all 100ms;
+  transition: all 100ms;
+  background-color: #F0F7F7;
+  /* border-color: hsl(0, 0%, 80%); */
+  border-radius: 8px;
+  /* border-style: solid; */
+  /* border-width: 1px; */
+  box-shadow: none;
+  box-sizing: border-box;
+  padding: 2px 4px;
+  border: none !important;
+}
+
+.dataName .css-6wodi1-control:hover{
+border-color: #F0F7F7 !important;
+cursor: pointer !important;
+}
+
+.dataName .css-1xc3v61-indicatorContainer {
+  color: #8d9193 !important;
+}
+
+.dataName .css-9g4fq9-placeholder {
+  grid-area: 1 / 1 / 2 / 3;
+  color: #869E9D !important;
+  margin-left: 2px;
+  margin-right: 2px;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: 500;
+  /* font-family: Inter, sans-serif; */
+}
+
+
+.dataName .css-hlgwow {
+  justify-content: left !important;
+}
+
+.dataName .custom_menu .css-1gpuq-menu{
+   background-color: orange !important;
+   color: white !important;
+}

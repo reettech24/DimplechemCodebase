@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" viewBox="0 0 24 24" aria-hidden="true">
+  <!-- Clipboard -->
+  <rect x="7" y="3" width="10" height="18" rx="2" ry="2"/>
+  <path d="M9 3v2a1 1 0 0 0 2 0V3"/>
+  <path d="M13 3v2a1 1 0 0 1 2 0V3"/>
+  <!-- Checkmark -->
+  <polyline points="9 12 11 14 15 10" />
+  <!-- Pen -->
+  <path d="M16 16l3 3-4 1-1-4 2-2z"/>
+</svg>

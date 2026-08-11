@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="100" viewBox="0 0 120 100" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true">
+  <!-- Badge circle -->
+  <circle cx="60" cy="40" r="30"/>
+  <!-- Zigzag edges -->
+  <path d="M32 40l6-9 6 9 6-9 6 9 6-9 6 9 6-9 6 9"/>
+  <!-- Checkmark -->
+  <polyline points="47 40 60 55 77 35" />
+  <!-- Text "Deal" below -->
+  <text x="60" y="85" fill="white" font-family="Arial, sans-serif" font-size="22" font-weight="300" dominant-baseline="middle" text-anchor="middle">
+    Deal
+  </text>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 120 120" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true">
+  <!-- Pie chart circle -->
+  <circle cx="60" cy="60" r="30" />
+  <!-- Pie slices -->
+  <path d="M60 60 L60 30 A30 30 0 0 1 90 60 Z" fill="white" />
+  <path d="M60 60 L90 60 A30 30 0 0 1 60 90 Z" fill="none" />
+  <path d="M60 60 L60 90 A30 30 0 0 1 30 60 Z" fill="none" />
+  <!-- Calendar grid inside -->
+  <rect x="40" y="40" width="40" height="40" stroke="white" fill="none" />
+  <line x1="40" y1="53" x2="80" y2="53" stroke="white" />
+  <line x1="40" y1="66" x2="80" y2="66" stroke="white" />
+  <line x1="53" y1="40" x2="53" y2="80" stroke="white" />
+  <line x1="66" y1="40" x2="66" y2="80" stroke="white" />
+  <!-- Text box -->
+  <rect x="40" y="95" width="40" height="20" stroke="white" fill="none" rx="4" ry="4" />
+  <!-- Text "ABP" inside box -->
+  <text x="60" y="108" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="600" dominant-baseline="middle" text-anchor="middle">
+    ABP
+  </text>
+</svg>

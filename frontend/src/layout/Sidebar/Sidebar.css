@@ -1,0 +1,223 @@
+/* sidebar */
+.sidebar {
+  background-color: var(--clr-primary);
+  width: 300px;
+  padding: 15px 10px;
+  transition: var(--transition-default);
+}
+
+.user-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 16px;
+}
+
+.info-name {
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--clr-white);
+  text-transform: uppercase;
+}
+
+.info-img {
+  width: 48px;
+  height: 48px;
+  overflow: hidden;
+  border-radius: 100%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* Navigation */
+.navigation {
+  margin-top: 28px;
+  height: 540px;
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+.navigation::-webkit-scrollbar {
+  width: 4px;
+}
+.navigation::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 18px;
+}
+.navigation::-webkit-scrollbar-thumb {
+  background-color: var(--clr-pumpkin);
+  border-radius: 18px;
+}
+
+.sidebar-change {
+  margin-left: -300px;
+}
+
+.nav-item {
+  margin-bottom: 7px;
+  margin-right: 4px;
+}
+
+.nav-link,
+.submenu-link,
+.nested-submenu-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 38px;
+  border-radius: 5px;
+  padding: 5px;
+  column-gap: 6px;
+  letter-spacing: 0.01em;
+  border: 1px solid transparent;
+  transition: var(--transition-default);
+}
+
+.nav-link span {
+  font-size: 12px !important;
+  line-height: 15px;
+}
+.submenu-link span {
+  font-size: 12px;
+  line-height: 15px;
+}
+.nested-submenu-link span {
+  font-size: 11px;
+  line-height: 15px;
+}
+
+.nav-link:hover,
+.submenu-link:hover,
+.nested-submenu-link:hover {
+  border: 1px solid var(--clr-primar-light);
+}
+
+.nav-link.active {
+  background-color: var(--clr-pumpkin);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+.submenu-link.active {
+  background-color: #fe6c00b0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+.nested-submenu-link.active {
+  background-color: #bd5913d6;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.nav-link-icons,
+.nav-link-icon {
+  width: 16px;
+}
+.nav-link-icon {
+  width: 19px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1400px) {
+  .sidebar {
+    padding: 24px 16px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .sidebar {
+    position: absolute;
+    z-index: 999;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    margin-left: -300px;
+  }
+  .sidebar-change {
+    margin-left: 0;
+  }
+  .logo-container {
+    margin-top: 40px;
+  }
+  .info-name {
+    display: none;
+  }
+  .nav-link {
+    display: flex;
+    justify-content: flex-start; /* Aligns the content to the left */
+    align-items: center; /* Centers the content vertically */
+    margin-bottom: 5px;
+    padding-left: 20px !important;
+  }
+  .nav-item {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 18px;
+    flex-direction: column;
+  }
+  .nav-link,
+  .submenu-link,
+  .nested-submenu-link {
+    padding: 0;
+    display: flex;
+    justify-content: flex-start; /* Aligns the content to the left */
+    align-items: center;
+    padding-left: 20px !important;
+    width: 100%;
+    height: 100%;
+  }
+  .nav-link.active,
+  .nav-link:hover,
+  .submenu-link.active,
+  .submenu-link:hover,
+  .nested-submenu-link.active,
+  .nested-submenu-link:hover {
+    border-radius: 5px;
+    padding: 10px 0px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    position: absolute;
+    z-index: 999;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    margin-left: -300px;
+  }
+  .sidebar-change {
+    margin-left: 0;
+  }
+  .nav-link span {
+  font-size: 11px !important;
+}
+.submenu-link span {
+  font-size: 10px;
+}
+.nested-submenu-link span {
+  font-size: 10px;
+}
+}
+
+@media screen and (max-width: 420px) {
+  
+  .sidebar {
+    position: absolute;
+    z-index: 999;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    margin-left: -300px;
+  }
+  .sidebar-change {
+    margin-left: 0;
+  }
+  .nav-link span {
+  font-size: 11px !important;
+}
+.submenu-link span {
+  font-size: 10px;
+}
+.nested-submenu-link span {
+  font-size: 10px;
+}
+}

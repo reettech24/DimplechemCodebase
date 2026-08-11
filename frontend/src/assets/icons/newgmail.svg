@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 120 120" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true">
+  <!-- Envelope outline -->
+  <rect x="25" y="35" width="70" height="50" rx="8" ry="8" />
+  <!-- Envelope flap -->
+  <polyline points="25,35 60,65 95,35" fill="none" stroke="white" stroke-width="2" />
+  <!-- Envelope bottom lines -->
+  <line x1="25" y1="85" x2="60" y2="60" />
+  <line x1="95" y1="85" x2="60" y2="60" />
+</svg>

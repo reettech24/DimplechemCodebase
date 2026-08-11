@@ -1,0 +1,30 @@
+{
+  "development": {
+    "username": "root",
+    "password": null,
+    "database": "dimplechemdb",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "googleOAuth": {
+    "clientId": "55383078377-kpkl3r1n0qo8937ltrskk3ane2cvmoge.apps.googleusercontent.com",
+    "clientSecret": "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",
+    "redirectUri": "http://localhost:5000/api/auth/callback",
+    "accessToken": "",
+    "refreshToken": ""
+  }
+}

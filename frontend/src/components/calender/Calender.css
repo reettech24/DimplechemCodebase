@@ -1,0 +1,47 @@
+#googlecalenderdiv .fc .fc-toolbar-title {
+    font-size: 17px !important;
+    margin: 0px !important;
+}
+
+#googlecalenderdiv .fc .fc-button-primary:disabled {
+    background-color: #fe6c00 !important;
+    border-color: #fe6c00 !important;
+    color: var(--fc-button-text-color) !important;
+}
+
+#googlecalenderdiv .fc .fc-button-group {
+    display: inline-flex !important;
+    position: relative !important;
+    vertical-align: middle !important;
+    gap: 7px !important;
+}
+
+#googlecalenderdiv .fc .fc-button-group > .fc-button {
+    flex: 1 1 auto !important;
+    position: relative !important;
+    border-radius: 5px !important;
+}
+
+#googlecalenderdiv .fc-view-harness thead {
+    background: #fe6c00 !important;
+}
+
+#googlecalenderdiv .fc .fc-scrollgrid {
+    border-bottom-width: 0px !important;
+    border-collapse: separate !important;
+    border-right-width: 0px !important;
+    border-color: #fe6c00 !important;
+}
+
+#googlecalenderdiv .fc-scrollgrid tbody {
+    border-color: #fe6c00 !important;
+}
+
+
+#googlecalenderdiv .fc-scrollgrid tr {
+border-color: #fe6c00 !important;
+}
+
+#googlecalenderdiv .fc-theme-standard td, .fc-theme-standard th {
+    border: 1px solid #fe6c00 !important;
+}

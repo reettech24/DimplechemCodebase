@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="60" viewBox="0 0 120 85" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true">
+  <!-- Calendar page with reduced height -->
+  <rect x="40" y="15" width="40" height="40" rx="2" ry="2"/>
+  <line x1="72" y1="13" x2="72" y2="23"/>
+  <line x1="48" y1="13" x2="48" y2="23"/>
+  <!-- Clock circle -->
+  <circle cx="60" cy="37" r="12"/>
+  <!-- Clock hands -->
+  <line x1="60" y1="31" x2="60" y2="37"/>
+  <line x1="60" y1="37" x2="68" y2="37"/>
+  <!-- Text box with reduced height -->
+  <rect x="40" y="58" width="40" height="14" stroke="white" fill="none" rx="4" ry="4"/>
+  <!-- Text "Leave" inside box -->
+  <text x="60" y="67" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="400" dominant-baseline="middle" text-anchor="middle">
+    Leave
+  </text>
+</svg>
